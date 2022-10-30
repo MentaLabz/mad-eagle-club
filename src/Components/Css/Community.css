@@ -1,0 +1,12 @@
+.container-mov{
+    --tw:145ch; 
+    --ad:28s;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.nfts-dao-p{
+    font-size: calc(100% + 50%);
+    margin: 0px;
+}

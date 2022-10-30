@@ -1,0 +1,17 @@
+.footer-box5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-box{
+    background: url(/src/Assets/Images/002.png) center bottom / cover;
+	box-shadow: 0px 10px 14px -7px #000000;
+}
+
+.footer-p{
+    font-size: calc(100% + 50%);
+    font-family: 'Bebas Neue', cursive;
+    color: #ffffff;
+	text-shadow: 0px 10px 14px -7px #000000;
+}

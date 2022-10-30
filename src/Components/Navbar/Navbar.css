@@ -1,0 +1,85 @@
+.navbar-div5{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 90%);
+}
+
+.navbar-a{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-a:hover{
+    color: #ffffffff;
+}
+
+.navbar-div1{
+    z-index: 100;
+}
+
+.navbar-img{
+    width: calc(100% - 60%);
+    height: calc(100% - 60%);
+
+}
+
+.navbar-div4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-li{
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar-div2{
+    background: hsl(0 0% 100% / 0.3);
+    backdrop-filter: blur(0.5rem);
+}
+
+.navbar-div3{
+    padding: 0px 20px;
+}
+
+.navbar-div6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-icon{
+    padding: 10px;
+}
+
+.navbar-h{
+    padding: 5px;
+	font-family:Arial;
+}
+
+.navbar-icon{
+    width: 30px;
+    font-size: 30px;
+}
+
+.navbar-a{
+    text-decoration: none;
+    font-size: calc(100% + 40%);
+    color: black;
+}
+
+.community-link{
+    color: black;
+}
+
+.community-link:hover{
+    color: #ffffffff;
+}
