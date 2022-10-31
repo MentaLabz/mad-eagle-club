@@ -1,3 +1,16 @@
+.time-mint{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mint-display{
+    font-size: calc(100% + 200%);
+    font-family: 'Bebas Neue', cursive;
+    padding: 20px;
+    font-weight: 200;
+}
+
 .mint-counter{
     display: flex;
     align-items: center;

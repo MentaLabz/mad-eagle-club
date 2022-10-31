@@ -130,4 +130,11 @@
         font-size: calc(100% + 200%);
     }
 
+    .mint-display{
+        font-size: calc(100% + 200%);
+        font-family: 'Bebas Neue', cursive;
+        padding: 10px;
+        font-weight: 200;
+    }
+
 }
