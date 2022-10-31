@@ -16,6 +16,10 @@
     z-index: 100;
 }
 
+.navbar-div1{
+    position: fixed;
+}
+
 .navbar-img{
     width: calc(100% - 60%);
     height: calc(100% - 60%);
@@ -26,8 +30,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    z-index: 9999;
 }
 
 .navbar-ul{
@@ -82,4 +84,18 @@
 
 .community-link:hover{
     color: #ffffffff;
+}
+
+.navbar-div8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-a{
+    font-weight: 300;
+}
+
+.icon-navbar{
+    display: none;
 }

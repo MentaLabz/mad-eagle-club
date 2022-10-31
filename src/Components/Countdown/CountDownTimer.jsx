@@ -23,11 +23,11 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
                     <div className="home-counter4">
                         <div className="mint-counter">
                             <DateTimeDisplay value={days} isDanger={days <= 3} />
-                            <p>:</p>
+                            <p className='display-counter'>:</p>
                             <DateTimeDisplay value={hours} isDanger={false} />
-                            <p>:</p>
+                            <p className='display-counter'>:</p>
                             <DateTimeDisplay value={minutes} isDanger={false} />
-                            <p>:</p>
+                            <p className='display-counter'>:</p>
                             <DateTimeDisplay value={seconds} isDanger={false} />
                         </div>
                         <div className="mint-display-timer">

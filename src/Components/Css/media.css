@@ -1,1 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@media (max-width: 750px){
+    .navbar-div6{
+        display: none;
+    }
+
+    .navbar-div8 {
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        text-align: center;
+        top: 100px;
+        font-weight: 600;
+
+        height: calc(100% - 0);
+        background: rgba(27, 20, 43, 0.562);
+        backdrop-filter: blur(0.8rem);
+
+        overflow-y: auto;
+
+
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .icon-navbar {
+        color: rgb(0, 0, 0);
+        font-size: calc(100% + 70%);
+        cursor: pointer;
+        display: block;
+        padding: 0px 10px;
+    }
+
+    .navbar-div8,
+    .navbar-ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        height: auto;
+    }
+
+    .navbar-div8,
+    .navbar-li {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .navbar-li {
+        height: auto;
+        width: auto;
+    }
+
+    .navbar-ul_visible {
+        left: 0;
+        position: fixed;
+    }
+
+    .navbar-li {
+        text-align: center;
+        padding: 10px;
+        width: calc(100% - 20%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-li:hover {
+        background: hsl(0 0% 100% / 0.3);
+        backdrop-filter: blur(0.5rem);
+        padding: 10px;
+        border-radius: 30px;
+    }
+
+    .navbar-a:hover {
+        color: #ffff;
+    }
+
+    .navbar-a {
+        padding: 10px;
+        color: #ffff;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .navbar-div5 {
+        width: calc(100% - 10%);
+    }
+
+    .navbar-img{
+        width: calc(100% - 90%);
+    }
+
+    div.home-counter{
+        padding: 0px 0px;
+        padding-bottom: 40px;
+    }
+
+    p.display-counter{
+        padding: 10px 10px;
+    }
+
+    h1.mint-day{
+        padding: 10px;
+    }
+
+    div.home-box4{
+        flex-direction: column;
+    }
+
+    div.home-box5{
+        padding-bottom: 30px;
+    }
+
+    img.home-img{
+        width: calc(100% - 10%);
+    }
+
+    div.home-box-about4{
+        flex-direction: column;
+    }
+
+    img.home-img2{
+        width: calc(100% - 20%);
+    }
+
+    p.nfts-dao-p{
+        font-size: calc(100% + 200%);
+    }
+
+}
