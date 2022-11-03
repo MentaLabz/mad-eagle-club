@@ -8,21 +8,20 @@ import { faDiscord } from '@fortawesome/free-brands-svg-icons'
 import {faCheckCircle} from '@fortawesome/free-regular-svg-icons'
 import MadEagle from '../../Assets/Images/36.png'
 import CountdownTimer from '../Countdown/CountDownTimer'
-
+import FirstMint from '../FirstMint/FirstMint'
 
 const Home = () => {
-
-  const THREE_DAYS_IN_MS = 7 * 24 * 60 * 60 * 1000;
-  const NOW_IN_MS = new Date().getTime();
-
-  const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
 
   return (
     <div className="home-box">
       <div className="home-box2">
 
+        <div className="f-minter">
+          <FirstMint/>
+        </div>
 
-        <CountdownTimer targetDate={dateTimeAfterThreeDays} />
+
+        <CountdownTimer />
         <div className="home-box3">
           <div className="home-box4">
             <div className="home-box5">

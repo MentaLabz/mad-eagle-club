@@ -53,7 +53,7 @@
 }
 
 .home-mint-counter{
-    font-size: calc(100% + 30%);
+    font-size: calc(100% + 50%);
     font-family: 'Bebas Neue', cursive;
     font-weight: 300;
 }
@@ -64,6 +64,7 @@
     border: none;
 	box-shadow: 0px 10px 14px -7px #000000;
     margin: 0px;
+    cursor: not-allowed;
 }
 
 .home-mint-button{

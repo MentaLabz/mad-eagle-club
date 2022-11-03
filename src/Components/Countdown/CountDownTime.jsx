@@ -11,10 +11,10 @@ const CountDown = () => {
 
 
     const startTimer = () => {
-        const countdownDate = new Date('Nov 6, 2022 00:00:00').toUTCString();
+        const countdownDate = new Date('Nov 7, 2022 00:00:00').toUTCString();
         const dateGetTime = new Date(countdownDate).getTime();
 
-
+    
         interval = setInterval(() => {
             const now = new Date().getTime();
             const distance = dateGetTime - now;

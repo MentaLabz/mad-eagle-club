@@ -137,4 +137,27 @@
         font-weight: 200;
     }
 
+    ul.navbar-ul2{
+        position:static;
+    }
+
+    li.dropdown-li{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img.partners-img{
+        width: calc(100% - 5%);
+    }
+
+    div.partners-list{
+        width: calc(100% + 30%);
+    }
+
+    div.partner-q2{
+        flex-direction: column;
+    }
+
 }

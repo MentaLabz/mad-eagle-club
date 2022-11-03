@@ -5,7 +5,7 @@ import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTelegram, faDiscord, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-
+import './Dropdown.css'
 
 const Navbar = () => {
 
@@ -29,14 +29,18 @@ const Navbar = () => {
             <div ref={navRef} className="navbar-div8">
               <ul className="navbar-ul">
                 <li className="navbar-li"><a href="/" className="navbar-a">Home</a><span></span></li>
-                <li className="navbar-li"><a href="/" className="navbar-a">NFTs</a><span></span></li>
+                <li className="navbar-li dropdown-li"><a  className="navbar-a a-drop">NFTs</a><span>
+                  <ul className="navbar-ul2 dropdown-ul">
+                    <li className="navbar-li2 li2"><a rel='noopener noreferrer' target="_blank" href="https://charitydogsnft.com" className="navbar-a2">Charity Dogs Club</a></li>
+                  </ul>
+                </span></li>
                 <li className="navbar-li"><a href="/" className="navbar-a">Roadmap</a><span></span></li>
-                <li className="navbar-li"><a className="navbar-a">Merch</a><span></span></li>
-                <li className="navbar-li"><a href="/" className="navbar-a">Partners</a><span></span></li>
+                <li className="navbar-li"><a className="navbar-a disable-links">Merch</a><span></span></li>
+                <li className="navbar-li"><a href={`/partners`} className="navbar-a">Partners</a><span></span></li>
                 <li className="navbar-li"><a href="/" className="navbar-a">Blog</a><span></span></li>
               </ul>
             </div>
-              <FontAwesomeIcon onClick={showNavbar} className='icon-navbar' icon={faBars} />
+            <FontAwesomeIcon onClick={showNavbar} className='icon-navbar' icon={faBars} />
             <div className="navbar-div6">
               <a target="_blank" rel='noopener noreferrer' href="https://t.me/mentalabz" className="community-link"><FontAwesomeIcon icon={faTelegram} className="navbar-icon" /></a>
               <a target="_blank" rel='noopener noreferrer' href="https://twitter.com/MadEagleClub" className="community-link"><FontAwesomeIcon icon={faTwitter} className="navbar-icon" /></a>

@@ -10,7 +10,7 @@ const ShowCounter = () => {
         <div className="home-counter">
             <div className="home-counter2">
                 <div className="home-counter3">
-                    <h2 className="home-mint-counter">Days For Mint</h2>
+                    <h2 className="home-mint-counter">Days For The First Minting Phase</h2>
                     <div className="home-counter4">
 
                         <CountDown/>

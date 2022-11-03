@@ -1,0 +1,57 @@
+.navbar-li2{
+    padding: 10px;
+    list-style: none;
+}
+
+.navbar-a2{
+    text-decoration: none;
+    font-size: calc(100% + 40%);
+    color: black;
+}
+
+.navbar-a2{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-a2:hover{
+    color: rgb(88, 88, 88);
+}
+
+.navbar-a2{
+    font-weight: 300;
+}
+
+.navbar-ul2{
+    position: fixed;
+    background: hsl(0 0% 100% / 0.3);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 10px;
+    top: 60px;
+    padding-inline-start: 0px;
+    padding: 10px;
+    display: none;
+}
+
+.li2:hover{
+    background: hsl(0 0% 100% / 0.5);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 10px;
+}
+
+.navbar-ul2_visible{
+    visibility: visible;
+}
+
+.a-drop:hover,
+.dropdown-li:hover .navbar-ul2{
+    display: block;
+}
+
+.a-drop{
+    cursor: pointer;
+}
+
+.disable-links{
+    cursor: pointer;
+}
+
