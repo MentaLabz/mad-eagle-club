@@ -34,10 +34,10 @@ const Navbar = () => {
                     <li className="navbar-li2 li2"><a rel='noopener noreferrer' target="_blank" href="https://charitydogsnft.com" className="navbar-a2">Charity Dogs Club</a></li>
                   </ul>
                 </span></li>
-                <li className="navbar-li"><a href="/" className="navbar-a">Roadmap</a><span></span></li>
+                <li className="navbar-li"><a  className="navbar-a disable-links">Roadmap</a><span></span></li>
                 <li className="navbar-li"><a className="navbar-a disable-links">Merch</a><span></span></li>
                 <li className="navbar-li"><a href={`/partners`} className="navbar-a">Partners</a><span></span></li>
-                <li className="navbar-li"><a href="/" className="navbar-a">Blog</a><span></span></li>
+                <li className="navbar-li"><a  className="navbar-a disable-links">Blog</a><span></span></li>
               </ul>
             </div>
             <FontAwesomeIcon onClick={showNavbar} className='icon-navbar' icon={faBars} />

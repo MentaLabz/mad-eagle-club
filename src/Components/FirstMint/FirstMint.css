@@ -22,5 +22,6 @@
 }
 
 .f-mint-p{
-    font-size: calc(100% + 50%);
+    font-size: calc(100% + 30%);
+    font-weight: 400;
 }
