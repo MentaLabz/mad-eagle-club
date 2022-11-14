@@ -25,7 +25,7 @@ const Home = () => {
         <div className="home-box3">
           <div className="home-box4">
             <div className="home-box5">
-              <h1 className="home-h1">Welcome to the Mad Eagle Club</h1>
+              <h1 className="home-h1">Welcome to the Mad Eagle Club 2.0</h1>
 
               <p className="home-p">Welcome to the club,
                 the new web3 club where your Mad Eagle makes
@@ -51,7 +51,7 @@ const Home = () => {
               <div className="home-box-about5">
                 <h1 className="home-h2">About</h1>
 
-                <p className="home-p2">Mad Eagle Club, is a collection of
+                <p className="home-p2">Mad Eagle Club 2.0, is a collection of
                   10,500 collectible NFTs that live on Ethereum.</p>
 
                 <p className="home-p3">The Mad Eagles came to the Ethereum
@@ -62,7 +62,7 @@ const Home = () => {
                   improve his evolutionary genes.</p>
 
                 <p className="home-p4">
-                  Welcome to the Mad Eagle Club
+                  Welcome to the Mad Eagle Club 2.0
                 </p>
 
                 <h2 className="home-h2">Overview</h2>
