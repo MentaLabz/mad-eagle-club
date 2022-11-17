@@ -7,7 +7,7 @@ import madEagleClub from "../Web3/abi.json";
 import { BigNumber, ethers } from "ethers";
 import { useEffect } from "react";
 import "../Css/media-kit.css";
-import '../Css/media.css'
+import "../Css/media.css";
 import coverNFTs from "../../Assets/Images/141.png";
 const keccak256 = require("keccak256");
 let Whitelist = require("../../data/Accounts.json");
@@ -178,7 +178,16 @@ const Mint = ({ accounts, setAccounts }) => {
       return "Error: " + mintError;
     }
     if (msgToMint === "hex") {
-      return "Hash: " + msgToMint;
+      return (
+        <a
+          className="external"
+          rel="noopener noreferrer"
+          target="_blank"
+          href={`https://etherscan.io/tx/${msgToMint}`}
+        >
+          Hash: {msgToMint};
+        </a>
+      );
     }
   };
 

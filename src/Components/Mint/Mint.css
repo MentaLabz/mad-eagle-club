@@ -133,3 +133,15 @@
     align-items: center;
     justify-content: center;
 }
+
+.external{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: calc(100% + 20%);
+    text-align: center;
+    text-decoration: none;
+}
+
+.external:hover{
+    color: white;
+}
