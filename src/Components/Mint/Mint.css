@@ -1,0 +1,135 @@
+.MECanim {
+    animation: MECanim 2s ease-in 0s infinite reverse none;
+}
+
+.MECover {
+    width: calc(100% - 20%);
+    padding: 10px;
+}
+
+.mintbox05 {
+    background: hsl(0 0% 100% / 0.3);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+    width: calc(100% - 10%);
+}
+
+.mintCard3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.supplyMint{
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: calc(100% + 10%);
+}
+
+.mintButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.whitelistMintButton {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-size:15px;
+    font-family: 'Bebas Neue', cursive;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+    margin: 0px;
+    font-size: calc(100% + 30%);
+}
+.whitelistMintButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.whitelistMintButton:active {
+	position:relative;
+	top:1px;
+}
+
+.whitelistBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+.buttonToMint {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+    margin: 0px;
+	display:inline-block;
+    font-family: 'Bebas Neue', cursive;
+	cursor:pointer;
+	color:#333333;
+	font-size:15px;
+	padding:10px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+    font-size: calc(100% + 10%);
+}
+.buttonToMint:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.buttonToMint:active {
+	position:relative;
+	top:1px;
+}
+
+#left{
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+#right{
+    border-bottom-left-radius: 0%;
+    border-top-left-radius: 0%;
+}
+
+.mintAmount{
+    border-style: none;
+    padding: 5px;
+    font-size: calc(100% + 30%);
+    text-align: center;
+}
+
+.mintButton3{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: calc(100% + 30%);
+    padding-bottom: 30px;
+}
+
+.disableButton{
+    cursor: not-allowed;
+}
+
+.mintbox04{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -5,16 +5,19 @@ import Home from './Components/Home/Home'
 import './Components/Css/media.css'
 import Footer from './Components/Footer/Footer';
 import Partners from './Components/Partners/Partners';
+import { useState } from 'react';
 
 function App() {
+
+  const [accounts, setAccounts] = useState([]);
   return (
     <section className="App">
       <header className="App-header">
-        <Navbar/>
+        <Navbar accounts={accounts} setAccount={setAccounts} />
       </header>
 
     <Routes>
-      <Route index path='/' element={<Home/>}></Route>
+      <Route index path='/' element={<Home accounts={accounts} setAccount={setAccounts} />}></Route>
       <Route index path='/partners' element={<Partners/>}></Route>
     </Routes>
 

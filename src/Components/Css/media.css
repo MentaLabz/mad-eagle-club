@@ -160,4 +160,22 @@
         flex-direction: column;
     }
 
+    .mintBox{
+        flex-direction: column;
+    }
+
+    .f-mint-p{
+        text-align: justify;
+    }
+
+    .connectWallet{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #li-button{
+        left: 0%;
+    }
+
 }

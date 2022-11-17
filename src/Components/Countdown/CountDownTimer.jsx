@@ -22,10 +22,6 @@ const ShowCounter = () => {
                             <h1 className="mint-day">Minutes</h1>
                             <h1 className="mint-day">Seconds</h1>
                         </div>
-
-                        <div className="home-mint-button">
-                            <button disabled className="redirect-mintpage"><p className="home-mint-button2">Mint</p></button>
-                        </div>
                     </div>
                 </div>
             </div>

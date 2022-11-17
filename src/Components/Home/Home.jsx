@@ -9,16 +9,24 @@ import { faCheckCircle } from "@fortawesome/free-regular-svg-icons";
 import MadEagle from "../../Assets/Images/36.png";
 import CountdownTimer from "../Countdown/CountDownTimer";
 import FirstMint from "../FirstMint/FirstMint";
+import Mint from "../Mint/Mint";
+import { useState } from "react";
 
-const Home = () => {
+const Home = ({ accounts, setAccounts }) => {
   return (
     <div className="home-box">
       <div className="home-box2">
-        <div className="f-minter">
-          <FirstMint />
+        <CountdownTimer />
+        <div className="mintBox">
+          <div className="f-minter">
+            <FirstMint />
+          </div>
+
+          <div className="mintPage">
+            <Mint accounts={accounts} setAccounts={setAccounts} />
+          </div>
         </div>
 
-        <CountdownTimer />
         <div className="home-box3">
           <div className="home-box4">
             <div className="home-box5">
