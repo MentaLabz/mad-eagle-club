@@ -10,7 +10,6 @@ import MadEagle from "../../Assets/Images/36.png";
 import CountdownTimer from "../Countdown/CountDownTimer";
 import FirstMint from "../FirstMint/FirstMint";
 import Mint from "../Mint/Mint";
-import { useState } from "react";
 
 const Home = ({ accounts, setAccounts }) => {
   return (
