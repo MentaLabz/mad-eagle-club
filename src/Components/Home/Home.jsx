@@ -1,3 +1,4 @@
+/* eslint-disable no-unreachable */
 import React from "react";
 import "./Home.css";
 import "../Css/Community.css";
@@ -15,7 +16,9 @@ const Home = ({ accounts, setAccounts }) => {
   return (
     <div className="home-box">
       <div className="home-box2">
-        <CountdownTimer />
+        <div className="mentaHidden">
+          <CountdownTimer />
+        </div>
         <div className="mintBox">
           <div className="f-minter">
             <FirstMint />

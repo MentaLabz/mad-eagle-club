@@ -16,8 +16,9 @@ const CountDown = () => {
 
     
         interval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = dateGetTime - now;
+            const now = new Date().toUTCString();
+            const nowMint = new Date(now).getTime();
+            const distance = dateGetTime - nowMint;
 
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)));
