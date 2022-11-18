@@ -16,7 +16,7 @@ const CountDown = () => {
 
     
         interval = setInterval(() => {
-            const now = new Date('Nov 18, 2022 00:00:00').toUTCString();
+            const now = new Date().toUTCString();
             const nowMint = new Date(now).getTime();
             const distance = dateGetTime - nowMint;
 
