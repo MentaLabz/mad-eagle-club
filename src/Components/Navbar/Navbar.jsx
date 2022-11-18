@@ -124,7 +124,7 @@ const Navbar = ({ accounts, setAccount }) => {
                     </div>
                   ) : (
                     <button
-                      disabled
+                      /*disabled*/
                       onClick={connectedAccount}
                       className="connectWallet disableButton"
                     >
