@@ -11,7 +11,7 @@ const CountDown = () => {
 
 
     const startTimer = () => {
-        const countdownDate = new Date('Nov 19, 2022 00:00:00').toUTCString();
+        const countdownDate = new Date('Nov 18, 2022 20:00:00').toUTCString();
         const dateGetTime = new Date(countdownDate).getTime();
 
     

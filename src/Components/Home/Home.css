@@ -128,3 +128,7 @@
     width: calc(100% - 0%);
 }
 
+.mentaHidden{
+    display: none;
+}
+

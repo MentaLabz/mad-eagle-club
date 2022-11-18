@@ -242,7 +242,7 @@ const Mint = ({ accounts, setAccounts }) => {
                     {isConnected ? (
                       <div className="whitelistBox">
                         <button
-                          disabled
+                          /*disabled*/
                           onClick={handleMint}
                           className="whitelistMintButton disableButton"
                         >
