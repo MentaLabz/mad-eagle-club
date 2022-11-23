@@ -145,3 +145,11 @@
 .external:hover{
     color: white;
 }
+
+.external-response{
+    flex-wrap: wrap;
+    -ms-wrap-flow: wrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 50%);
+    overflow: hidden;
+}

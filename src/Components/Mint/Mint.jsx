@@ -141,7 +141,7 @@ const Mint = ({ accounts, setAccounts }) => {
               hash: response.hash,
             };
             console.log("response: " + JSON.stringify(msgMint.hash));
-            setMintMsg(msgMint.hash);
+            setMintMsg("Success");
           } catch (err) {
             const errorMint = await err;
 
@@ -171,24 +171,15 @@ const Mint = ({ accounts, setAccounts }) => {
   };
 
   const mintMessage = () => {
-    if (
+    if (msgToMint === msgToMint) {
+      return msgToMint
+    }if (
       (mintError === "execution reverted: Address already claimed!") |
       (mintError === "execution reverted: Invalid proof!")
     ) {
       return "Error: " + mintError;
     }
-    if (msgToMint === "hex") {
-      return (
-        <a
-          className="external"
-          rel="noopener noreferrer"
-          target="_blank"
-          href={`https://etherscan.io/tx/${msgToMint}`}
-        >
-          Hash: {msgToMint};
-        </a>
-      );
-    }
+    
   };
 
   useEffect(() => {
@@ -258,8 +249,12 @@ const Mint = ({ accounts, setAccounts }) => {
                     )}
 
                     <div className="balanceOf mintButton3">{balance} </div>
-                    <div className="error-displayed mintButton3">
-                      {mintMessage()}
+                    <div className="external-response1">
+                      <div className="external-response2">
+                        <div className="error-displayed mintButton3">
+                          {mintMessage()}
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
