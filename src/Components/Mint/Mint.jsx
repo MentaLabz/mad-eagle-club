@@ -9,37 +9,26 @@ import { useEffect } from "react";
 import "../Css/media-kit.css";
 import "../Css/media.css";
 import coverNFTs from "../../Assets/Images/141.png";
+import { minterAmount } from "../../data/DataMint";
+import { CDCHolders } from "../../data/CDCHolders";
 const keccak256 = require("keccak256");
 let Whitelist = require("../../data/Accounts.json");
 const { MerkleTree } = require("merkletreejs");
 require("dotenv").config();
 
 const mecAddress = process.env.REACT_APP_ETHEREUM_ADDRESS_MEC;
+const addrLower = CDCHolders;
 
 const Mint = ({ accounts, setAccounts }) => {
   //Hooks for Webpage
   const [mintAmount, setmintAmount] = useState(1);
   const [supply, setSupply] = useState();
-  //const [claimingAddress, setClaimingAddress] = useState("");
   const [balance, setBalance] = useState(0);
   const [msgToMint, setMintMsg] = useState("");
-  const [mintError, setMintError] = useState("");
   const [mecMaxSupply, setMecMaxSupply] = useState();
   const isConnected = Boolean(accounts[0]);
 
   //get Accounts
-
-  /*async function getAccount() {
-    if (window.ethereum) {
-      const accounts = await window.ethereum.request({
-        method: "eth_requestAccounts",
-      });
-
-      setAccounts(accounts);
-    }
-  }
-
-  getAccount();*/
 
   //get Merkle Whitelist
 
@@ -50,20 +39,7 @@ const Mint = ({ accounts, setAccounts }) => {
   //console.log("Whitelist Merkle Tree\n", merkleTree.toString());
   console.log("Root Hash: ", "0x" + rootHash.toString("hex"));
 
-  // put address here to check if its on your wl or not
-  //const getProof = async () => {
-  //if (window.ethereum) {
   const claimingAddress = keccak256(accounts[0]);
-  // setClaimingAddress(getHashByAccount);
-  // console.log("account connected: " + accounts[0]);
-  //} else {
-  // console.log("you must connect your account");
-  //}
-  //};
-
-  /*useEffect(() => {
-    getProof();
-  }, []);*/
 
   const hexProof = merkleTree.getHexProof(Buffer(claimingAddress));
   //console.log("hexproof\n", hexProof);
@@ -149,13 +125,69 @@ const Mint = ({ accounts, setAccounts }) => {
               reason: errorMint.reason,
             };
 
-            setMintError(errMint.reason);
+            setMintMsg(errMint.reason);
             console.log("error: " + JSON.stringify(errMint));
           }
         };
         getGas();
       } catch (err) {
         console.log("error: " + err);
+      }
+    }
+  }
+  //Temp Method MaxMint
+
+  async function numberFixed() {
+    if (window.ethereum) {
+      const accounts = await window.ethereum.request({
+        method: "eth_requestAccounts",
+      });
+      const addr = accounts[0];
+      const holder1 = addrLower.holder1;
+      const holder2 = addrLower.holder2;
+      const holder3 = addrLower.holder3;
+      const holder4 = addrLower.holder4;
+      const holder5 = addrLower.holder5;
+      const holder6 = addrLower.holder6;
+      const holder7 = addrLower.holder7;
+      const holder8 = addrLower.holder8;
+      const holder9 = addrLower.holder9;
+      const holder10 = addrLower.holder10;
+      const holder11 = addrLower.holder11;
+      const holder12 = addrLower.holder12;
+      const holder13 = addrLower.holder13;
+      const holder14 = addrLower.holder14;
+      const holder15 = addrLower.holder15;
+      const holder16 = addrLower.holder16;
+      try {
+        if (
+          (addr === holder1.toLowerCase()) |
+          (addr === holder2.toLowerCase()) |
+          (addr === holder3.toLowerCase()) |
+          (addr === holder4.toLowerCase()) |
+          (addr === holder5.toLowerCase()) |
+          (addr === holder6.toLowerCase()) |
+          (addr === holder7.toLowerCase()) |
+          (addr === holder8.toLowerCase()) |
+          (addr === holder9.toLowerCase()) |
+          (addr === holder10.toLowerCase()) |
+          (addr === holder11.toLowerCase()) |
+          (addr === holder12.toLowerCase()) |
+          (addr === holder13.toLowerCase()) |
+          (addr === holder14.toLowerCase())
+        ) {
+          setmintAmount(minterAmount[accounts[0]] * 2);
+        } if (
+          (addr === holder15.toLowerCase()) |
+          (addr === holder16.toLowerCase())
+        ) {
+          setmintAmount(5);
+          
+        } else {
+          setmintAmount(2);
+        }
+      } catch (e) {
+        console.log("error" + e);
       }
     }
   }
@@ -166,25 +198,23 @@ const Mint = ({ accounts, setAccounts }) => {
   };
 
   const handleIncrement = () => {
-    if (mintAmount >= 5) return;
+    if (mintAmount >= 20) return;
     setmintAmount(mintAmount + 1);
   };
 
   const mintMessage = () => {
     if (msgToMint === msgToMint) {
-      return msgToMint
-    }if (
-      (mintError === "execution reverted: Address already claimed!") |
-      (mintError === "execution reverted: Invalid proof!")
-    ) {
-      return "Error: " + mintError;
+      return msgToMint;
     }
-    
   };
 
   useEffect(() => {
     mintMessage();
   }, []);
+
+  numberFixed();
+
+  console.log();
 
   return (
     <section className="mint">
@@ -207,6 +237,7 @@ const Mint = ({ accounts, setAccounts }) => {
                     </div>
                     <div className="mintButton">
                       <button
+                        disabled
                         id="left"
                         className="buttonToMint"
                         onClick={handleDecrement}
@@ -222,6 +253,7 @@ const Mint = ({ accounts, setAccounts }) => {
                       />
 
                       <button
+                        disabled
                         id="right"
                         className="buttonToMint"
                         onClick={handleIncrement}
