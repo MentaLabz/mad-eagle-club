@@ -12,7 +12,7 @@ import coverNFTs from "../../Assets/Images/141.png";
 import { minterAmount } from "../../data/DataMint";
 import { CDCHolders } from "../../data/CDCHolders";
 const keccak256 = require("keccak256");
-let Whitelist = require("../../data/Accounts.json");
+let Whitelist = require("../../data/CDCHolders.json");
 const { MerkleTree } = require("merkletreejs");
 require("dotenv").config();
 
@@ -177,7 +177,7 @@ const Mint = ({ accounts, setAccounts }) => {
           (addr === holder14.toLowerCase())
         ) {
           setmintAmount(minterAmount[accounts[0]] * 2);
-        } if (
+        } else if (
           (addr === holder15.toLowerCase()) |
           (addr === holder16.toLowerCase())
         ) {
@@ -210,9 +210,9 @@ const Mint = ({ accounts, setAccounts }) => {
 
   useEffect(() => {
     mintMessage();
+    numberFixed();
   }, []);
 
-  numberFixed();
 
   console.log();
 
