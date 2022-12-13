@@ -117,7 +117,7 @@ const Mint = ({ accounts, setAccounts }) => {
               hash: response.hash,
             };
             console.log("response: " + JSON.stringify(msgMint.hash));
-            setMintMsg("Success");
+            setMintMsg("Success, waiting confirmation.");
           } catch (err) {
             const errorMint = await err;
 
@@ -182,7 +182,7 @@ const Mint = ({ accounts, setAccounts }) => {
           (addr === holder16.toLowerCase())
         ) {
           setmintAmount(5);
-          
+
         } else {
           setmintAmount(2);
         }
