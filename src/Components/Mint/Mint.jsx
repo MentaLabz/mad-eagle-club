@@ -12,7 +12,7 @@ import coverNFTs from "../../Assets/Images/141.png";
 import { minterAmount } from "../../data/DataMint";
 import { CDCHolders } from "../../data/CDCHolders";
 const keccak256 = require("keccak256");
-let Whitelist = require("../../data/CDCHolders.json");
+let Whitelist = require("../../data/Accounts.json");
 const { MerkleTree } = require("merkletreejs");
 require("dotenv").config();
 
@@ -142,7 +142,7 @@ const Mint = ({ accounts, setAccounts }) => {
       const accounts = await window.ethereum.request({
         method: "eth_requestAccounts",
       });
-      const addr = accounts[0];
+      const addrMint = accounts[0];
       const holder1 = addrLower.holder1;
       const holder2 = addrLower.holder2;
       const holder3 = addrLower.holder3;
@@ -161,25 +161,25 @@ const Mint = ({ accounts, setAccounts }) => {
       const holder16 = addrLower.holder16;
       try {
         if (
-          (addr === holder1.toLowerCase()) |
-          (addr === holder2.toLowerCase()) |
-          (addr === holder3.toLowerCase()) |
-          (addr === holder4.toLowerCase()) |
-          (addr === holder5.toLowerCase()) |
-          (addr === holder6.toLowerCase()) |
-          (addr === holder7.toLowerCase()) |
-          (addr === holder8.toLowerCase()) |
-          (addr === holder9.toLowerCase()) |
-          (addr === holder10.toLowerCase()) |
-          (addr === holder11.toLowerCase()) |
-          (addr === holder12.toLowerCase()) |
-          (addr === holder13.toLowerCase()) |
-          (addr === holder14.toLowerCase())
+          (addrMint=== holder1.toLowerCase()) |
+          (addrMint=== holder2.toLowerCase()) |
+          (addrMint=== holder3.toLowerCase()) |
+          (addrMint=== holder4.toLowerCase()) |
+          (addrMint=== holder5.toLowerCase()) |
+          (addrMint=== holder6.toLowerCase()) |
+          (addrMint=== holder7.toLowerCase()) |
+          (addrMint=== holder8.toLowerCase()) |
+          (addrMint=== holder9.toLowerCase()) |
+          (addrMint=== holder10.toLowerCase()) |
+          (addrMint=== holder11.toLowerCase()) |
+          (addrMint=== holder12.toLowerCase()) |
+          (addrMint=== holder13.toLowerCase()) |
+          (addrMint=== holder14.toLowerCase())
         ) {
           setmintAmount(minterAmount[accounts[0]] * 2);
         } else if (
-          (addr === holder15.toLowerCase()) |
-          (addr === holder16.toLowerCase())
+          (addrMint=== holder15.toLowerCase()) |
+          (addrMint=== holder16.toLowerCase())
         ) {
           setmintAmount(5);
 
