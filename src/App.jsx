@@ -1,14 +1,14 @@
-import './App.css';
-import Navbar from './Components/Navbar/Navbar'
-import { Route, Routes } from 'react-router-dom'
-import Home from './Components/Home/Home'
-import './Components/Css/media.css'
-import Footer from './Components/Footer/Footer';
-import Partners from './Components/Partners/Partners';
-import { useState } from 'react';
+import "./App.css";
+import Navbar from "./Components/Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import "./Components/Css/media.css";
+import Footer from "./Components/Footer/Footer";
+import Partners from "./Components/Partners/Partners";
+import { useState } from "react";
+import Maintenance from "./Components/Maintenance/Maintenance";
 
 function App() {
-
   const [accounts, setAccounts] = useState([]);
   return (
     <section className="App">
@@ -16,12 +16,21 @@ function App() {
         <Navbar accounts={accounts} setAccount={setAccounts} />
       </header>
 
-    <Routes>
-      <Route index path='/' element={<Home accounts={accounts} setAccount={setAccounts} />}></Route>
-      <Route index path='/partners' element={<Partners/>}></Route>
-    </Routes>
+      <Routes>
+        <Route
+          index
+          path="/"
+          element={<Maintenance/>}
+        ></Route>
+        {/*<Route
+          index
+          path="/"
+          element={<Home accounts={accounts} setAccount={setAccounts} />}
+  ></Route>*/}
+        <Route index path="/partners" element={<Partners />}></Route>
+      </Routes>
 
-    <Footer/>
+      <Footer />
     </section>
   );
 }

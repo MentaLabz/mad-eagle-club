@@ -11,9 +11,9 @@ import "../Css/media.css";
 import coverNFTs from "../../Assets/Images/141.png";
 //import { minterAmount } from "../../data/DataMint";
 //import { CDCHolders } from "../../data/CDCHolders";
-const keccak256 = require("keccak256");
-let Whitelist = require("../../data/Accounts.json");
-const { MerkleTree } = require("merkletreejs");
+//const keccak256 = require("keccak256");
+//let Whitelist = require("../../data/Accounts.json");
+//const { MerkleTree } = require("merkletreejs");
 require("dotenv").config();
 
 const mecAddress = process.env.REACT_APP_ETHEREUM_ADDRESS_MEC;
@@ -32,7 +32,7 @@ const Mint = ({ accounts, setAccounts }) => {
 
   //get Merkle Whitelist
 
-  const leafNodes = Whitelist.map((addr) => keccak256(addr));
+  /*const leafNodes = Whitelist.map((addr) => keccak256(addr));
   const merkleTree = new MerkleTree(leafNodes, keccak256, { sortPairs: true });
   const rootHash = merkleTree.getRoot();
 
@@ -43,7 +43,7 @@ const Mint = ({ accounts, setAccounts }) => {
 
   const hexProof = merkleTree.getHexProof(Buffer(claimingAddress));
   console.log("hexproof\n", hexProof);
-  //console.log(merkleTree.verify(hexProof, claimingAddress, rootHash));
+  //console.log(merkleTree.verify(hexProof, claimingAddress, rootHash));*/
 
   //Balance ERC721
 
