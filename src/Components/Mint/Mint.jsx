@@ -9,15 +9,15 @@ import { useEffect } from "react";
 import "../Css/media-kit.css";
 import "../Css/media.css";
 import coverNFTs from "../../Assets/Images/141.png";
-import { minterAmount } from "../../data/DataMint";
-import { CDCHolders } from "../../data/CDCHolders";
+//import { minterAmount } from "../../data/DataMint";
+//import { CDCHolders } from "../../data/CDCHolders";
 const keccak256 = require("keccak256");
 let Whitelist = require("../../data/Accounts.json");
 const { MerkleTree } = require("merkletreejs");
 require("dotenv").config();
 
 const mecAddress = process.env.REACT_APP_ETHEREUM_ADDRESS_MEC;
-const addrLower = CDCHolders;
+//const addrLower = CDCHolders;
 
 const Mint = ({ accounts, setAccounts }) => {
   //Hooks for Webpage
@@ -42,7 +42,7 @@ const Mint = ({ accounts, setAccounts }) => {
   const claimingAddress = keccak256(accounts[0]);
 
   const hexProof = merkleTree.getHexProof(Buffer(claimingAddress));
-  //console.log("hexproof\n", hexProof);
+  console.log("hexproof\n", hexProof);
   //console.log(merkleTree.verify(hexProof, claimingAddress, rootHash));
 
   //Balance ERC721
@@ -107,7 +107,7 @@ const Mint = ({ accounts, setAccounts }) => {
             const getPrice = await contract.cost();
             const response = await contract.mint(
               BigNumber.from(mintAmount),
-              hexProof,
+              //hexProof,
               {
                 gasLimit: e,
                 value: (getPrice * mintAmount).toString(),
@@ -137,7 +137,7 @@ const Mint = ({ accounts, setAccounts }) => {
   }
   //Temp Method MaxMint
 
-  async function numberFixed() {
+  /*async function numberFixed() {
     if (window.ethereum) {
       const accounts = await window.ethereum.request({
         method: "eth_requestAccounts",
@@ -190,7 +190,7 @@ const Mint = ({ accounts, setAccounts }) => {
         console.log("error" + e);
       }
     }
-  }
+  }*/
 
   const handleDecrement = () => {
     if (mintAmount <= 1) return;
@@ -198,7 +198,7 @@ const Mint = ({ accounts, setAccounts }) => {
   };
 
   const handleIncrement = () => {
-    if (mintAmount >= 20) return;
+    if (mintAmount >= 10) return;
     setmintAmount(mintAmount + 1);
   };
 
@@ -210,7 +210,7 @@ const Mint = ({ accounts, setAccounts }) => {
 
   useEffect(() => {
     mintMessage();
-    numberFixed();
+    //numberFixed();
   }, []);
 
 
@@ -237,7 +237,7 @@ const Mint = ({ accounts, setAccounts }) => {
                     </div>
                     <div className="mintButton">
                       <button
-                        disabled
+                        //disabled
                         id="left"
                         className="buttonToMint"
                         onClick={handleDecrement}
@@ -253,7 +253,7 @@ const Mint = ({ accounts, setAccounts }) => {
                       />
 
                       <button
-                        disabled
+                        //disabled
                         id="right"
                         className="buttonToMint"
                         onClick={handleIncrement}
