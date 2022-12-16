@@ -105,7 +105,7 @@ const Mint = ({ accounts, setAccounts }) => {
         const getGas = async (e) => {
           try {
             const getPrice = await contract.cost();
-            const response = await contract.whitelistMint(
+            const response = await contract.mint(
               BigNumber.from(mintAmount),
               hexProof,
               {
