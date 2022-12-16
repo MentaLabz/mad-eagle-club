@@ -1,6 +1,6 @@
 import React from "react";
 import "./FirstMint.css";
-import BannerHolders from "../../Assets/Images/032102.png";
+import BannerHolders from "../../Assets/Images/1001.png";
 
 const FirstMint = () => {
   return (
@@ -16,23 +16,26 @@ const FirstMint = () => {
               />
 
               <div className="f-box5">
-                <h1 className="f-mint-h">Charity Dogs Club (CDCs) Holders</h1>
+                <h1 className="f-mint-h">Public Sale</h1>
 
                 <h2 className="f-mint-h2">
-                  Second and Third Phase of Minting.
+                  Live Mint
                 </h2>
 
                 <p className="f-mint-p">
-                  In this minting phase, Charity Dogs Club Holders will be able
-                  to mint the number of NFTs corresponding to the number of CDCs
-                  they have. And those who are on the white list for free mint
-                  between the dates of November 22 to December 15, 2022.
+                Public sale has started the mint will cost 0.03 ETH per MEC.
+                many benefits will begin to take place, while the entire minting process is carried out.
                 </p>
                 <p className="f-mint-p">
-                  After these phases, the sale will begin with a price of 0.03
-                  ETH
+                one of the important benefits are:
                 </p>
               </div>
+              <ul className="benefits">
+                  <li className="benefits-li">Staking</li>
+                  <li className="benefits-li">Participate for the delivery of rewards in ETH.</li>
+                  <li className="benefits-li">Participation in projects supported by MentaDAO</li>
+                  <li className="benefits-li">and many more</li>
+                </ul>
             </div>
           </div>
         </div>

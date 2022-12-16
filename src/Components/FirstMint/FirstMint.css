@@ -31,3 +31,8 @@
 .f-box5{
     text-align: center;
 }
+
+.benefits-li{
+    font-size: calc(100% + 15%);
+    font-weight: 400;
+}

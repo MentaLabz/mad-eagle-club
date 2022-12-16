@@ -177,5 +177,8 @@
     #li-button{
         left: 0%;
     }
+    .is-ssq-l{
+        display: none;
+    }
 
 }

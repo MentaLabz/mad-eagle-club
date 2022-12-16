@@ -74,11 +74,11 @@ const Navbar = ({ accounts, setAccount }) => {
                   </span>
                 </li>
                 <li className="navbar-li">
-                  <a className="navbar-a disable-links">Roadmap</a>
+                  <a href={`/roadmap`} className="navbar-a">Roadmap</a>
                   <span></span>
                 </li>
                 <li className="navbar-li">
-                  <a className="navbar-a disable-links">Merch</a>
+                  <a href={`/merch`} className="navbar-a">Merch</a>
                   <span></span>
                 </li>
                 <li className="navbar-li">
@@ -88,7 +88,7 @@ const Navbar = ({ accounts, setAccount }) => {
                   <span></span>
                 </li>
                 <li className="navbar-li">
-                  <a className="navbar-a disable-links">Blog</a>
+                  <a href={`/blog`} className="navbar-a">Blog</a>
                   <span></span>
                 </li>
                 <li id="li-button" className="navbar-li mdflex">

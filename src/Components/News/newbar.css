@@ -1,0 +1,38 @@
+.container-mov{
+    --tw:145ch; 
+    --ad:28s;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+
+.nfts-dao-p{
+    font-size: calc(100% + 80%);
+    margin: 0px;
+    padding: 0px;
+}
+
+#is-txt{
+    font-size: calc(100% + 20%);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    padding: 0px 15px;
+}
+
+#is-txt2{
+    font-size: calc(100% + 20%);
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+}
+
+#is-ssq{
+    top: 80px;
+    position: fixed;
+    z-index: 80;
+    padding: 3px;
+}
+
+.txt-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

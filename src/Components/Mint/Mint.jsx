@@ -3,12 +3,13 @@
 import React from "react";
 import { useState } from "react";
 import "./Mint.css";
+import gifLogo from '../../Assets/Images/mec.gif'
 import madEagleClub from "../Web3/abi.json";
 import { BigNumber, ethers } from "ethers";
 import { useEffect } from "react";
 import "../Css/media-kit.css";
 import "../Css/media.css";
-import coverNFTs from "../../Assets/Images/141.png";
+//import coverNFTs from "../../Assets/Images/141.png";
 //import { minterAmount } from "../../data/DataMint";
 //import { CDCHolders } from "../../data/CDCHolders";
 //const keccak256 = require("keccak256");
@@ -231,7 +232,7 @@ const Mint = ({ accounts, setAccounts }) => {
                     <div className="mintCard3">
                       <img
                         className="MECanim MECover"
-                        src={coverNFTs}
+                        src={gifLogo}
                         alt="CoverMEC"
                       />
                     </div>
