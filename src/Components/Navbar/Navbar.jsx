@@ -74,11 +74,15 @@ const Navbar = ({ accounts, setAccount }) => {
                   </span>
                 </li>
                 <li className="navbar-li">
-                  <a href={`/roadmap`} className="navbar-a">Roadmap</a>
+                  <a href={`/roadmap`} className="navbar-a">
+                    Roadmap
+                  </a>
                   <span></span>
                 </li>
                 <li className="navbar-li">
-                  <a href={`/merch`} className="navbar-a">Merch</a>
+                  <a href={`/merch`} className="navbar-a">
+                    Merch
+                  </a>
                   <span></span>
                 </li>
                 <li className="navbar-li">
@@ -88,40 +92,53 @@ const Navbar = ({ accounts, setAccount }) => {
                   <span></span>
                 </li>
                 <li className="navbar-li">
-                  <a href={`/blog`} className="navbar-a">Blog</a>
+                  <a href={`/blog`} className="navbar-a">
+                    Blog
+                  </a>
+                  <span></span>
+                </li>
+                <li className="navbar-li">
+                  <a href={`/mec`} className="navbar-a">
+                    MYMEC
+                  </a>
                   <span></span>
                 </li>
                 <li id="li-button" className="navbar-li mdflex">
                   {isConnected ? (
-                    <div className="walletConnected ">
-                      <div className="wallet">
-                        <ul id="ul-button" className="walletConnected-ul">
-                          <li id="ul-button" className="navbar-li dropdown-li">
-                            <a
-                              id="accounts"
-                              className="navbar-a wrapped-text connectWallet"
+                    <>
+                      <div className="walletConnected ">
+                        <div className="wallet">
+                          <ul id="ul-button" className="walletConnected-ul">
+                            <li
+                              id="ul-button"
+                              className="navbar-li dropdown-li"
                             >
-                              {accounts}
-                            </a>
-                            <span>
-                              <ul
-                                id="ul-button"
-                                className="navbar-ul2 dropdown-ul"
+                              <a
+                                id="accounts"
+                                className="navbar-a wrapped-text connectWallet"
                               >
-                                <li id="ul-button" className="navbar-li2 li2">
-                                  <button
-                                    onClick={disconnectedAccount}
-                                    className="navbar-a2 connectWallet"
-                                  >
-                                    Disconnect
-                                  </button>
-                                </li>
-                              </ul>
-                            </span>
-                          </li>
-                        </ul>
+                                {accounts}
+                              </a>
+                              <span>
+                                <ul
+                                  id="ul-button"
+                                  className="navbar-ul2 dropdown-ul"
+                                >
+                                  <li id="ul-button" className="navbar-li2 li2">
+                                    <button
+                                      onClick={disconnectedAccount}
+                                      className="navbar-a2 connectWallet"
+                                    >
+                                      Disconnect
+                                    </button>
+                                  </li>
+                                </ul>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
+                    </>
                   ) : (
                     <button
                       /*disabled*/

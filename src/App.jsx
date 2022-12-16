@@ -33,6 +33,7 @@ function App() {
         <Route index path="/roadmap" element={<Maintenance />}></Route>
         <Route index path="/merch" element={<Maintenance />}></Route>
         <Route index path="/blog" element={<Maintenance />}></Route>
+        <Route index path="/mec" element={<Maintenance />}></Route>
         
       </Routes>
 
